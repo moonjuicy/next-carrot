@@ -8,12 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      margin: {
+        tomato: "120px",
+      },
+      borderRadius: {
+        "sexy-name": "11.11px",
       },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("@tailwindcss/forms")],
 };
 export default config;
